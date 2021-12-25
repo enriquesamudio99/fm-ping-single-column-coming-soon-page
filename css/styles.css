@@ -141,7 +141,7 @@ ul {
 }
 
 .copyright {
-    margin-top: 1.875rem;
+    margin: 1.875rem 0;
     text-align: center;
     font-size: 0.75rem;
     color: var(--gray);
