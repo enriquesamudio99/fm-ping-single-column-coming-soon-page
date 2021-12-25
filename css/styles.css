@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+    /* Colors */
+    /* Primary */
+    --blue: hsl(223, 87%, 63%);
+    /* Secondary */
+    --paleBlue: hsl(223, 100%, 88%);
+    --lightRed: hsl(354, 100%, 66%);
+    /* Neutral */
+    --gray: hsl(0, 0%, 59%);
+    --veryDarkBlue: hsl(209, 33%, 12%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.618;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: calc(100% - 3.5rem);
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 60px;
+}
+
+.main {
+    text-align: center;
+}
+
+.title {
+    margin-top: 2.5rem;
+    line-height: 1.2;
+    font-size: 1.75rem;
+    font-weight: 300;
+    color: var(--gray);
+}
+
+.title span {
+    font-weight: 600;
+    color: var(--veryDarkBlue);
+}
+
+.subtitle {
+    margin-top: 1.25rem;
+    font-size: 0.875rem;
+}
+
+.form {
+    margin-top: 1.875rem;
+    display: grid;
+    gap: 0.625rem;
+}
+
+.input {
+    width: 100%;
+    font-family: inherit;
+    padding: 0.875rem 2rem;
+    border-radius: 48px;
+    border: 1px solid var(--paleBlue);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.input::placeholder {
+    color: var(--paleBlue);
+    opacity: 1;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.btn {
+    background-color: var(--blue);
+    width: 100%;
+    font-family: inherit;
+    padding: 0.875rem 2rem;
+    border-radius: 48px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.image {
+    margin-top: 4.375rem;
+}
+
+.socials {
+    margin-top: 7.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.social {
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--paleBlue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-link {
+    color: var(--blue);
+}
+
+.copyright {
+    margin-top: 1.875rem;
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--gray);
+}
